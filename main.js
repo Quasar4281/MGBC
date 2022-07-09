@@ -1,7 +1,11 @@
+//require('dotenv').config()
+//console.log(process.env)
+
+//const API_KEY = process.env.API_KEY;
 const mainDiv = document.querySelector("#main");
 
 (async function loadApis() {
-    const testLen = 22;
+    const testLen = 2;
     const testRanArr = uniqRandNum(500, testLen);
     for (let j = 0; testLen > j; j++) {
         loadMovie(testRanArr[j]);
