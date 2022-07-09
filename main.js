@@ -7,7 +7,7 @@ const mainDiv = document.querySelector("#main");
         loadMovie(testRanArr[j]);
     }
 
-    async function loadMovie(id){
+    async function loadMovie(id) {
         const response = await fetch(`https://api.tvmaze.com/shows/${id}/images`);
         const data = await response.json();
         const testRanArrTwo = uniqRandNum(data.length, data.length);
